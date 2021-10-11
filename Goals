@@ -18,4 +18,6 @@ WE DO NOT HAVE: list of traders, table for data
 2) Having a application able to be runned in several instances that sends telegram messages to specific groups. Each instance manages one group. The group info are sent in the configuration of the instance.
 Parameters: group_id, traders_to_copy
 
+Understand the current code. Having a better looking code, more scalable, reliable. Propose (if needed) a new solution to get the difference in positions.
+
 3) Late (next weeks, after Paolo snippets of code), automate trading based on signals received. 
