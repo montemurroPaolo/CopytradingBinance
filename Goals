@@ -1,0 +1,7 @@
+1) Having a database with frequent updates of performances of all traders in Leaderboard
+One instance, on one server. Separate database.
+
+2) Having a application able to be runned in several instances that sends telegram messages to specific groups. Each instance manages one group. The group info are sent in the configuration of the instance.
+Parameters: group_id, traders_to_copy
+
+3) Late (next weeks, after Paolo snippets of code), automate trading based on signals received. 
