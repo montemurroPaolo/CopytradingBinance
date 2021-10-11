@@ -1,5 +1,19 @@
-1) Having a database with frequent updates of performances of all traders in Leaderboard
-One instance, on one server. Separate database.
+1) Having a database with frequent updates of performances of all traders in Leaderboard One instance, on one server. Separate database.
+
+General purpose: Costantly scrape traders' positions and results on Binance
+
+- https://www.binance.com/en/futures-activity/leaderboard
+- Tick "PNL Rankings", "Users sharing positions", time interval: "monthly"
+- For each of the traders:
+	- Open Their page (https://www.binance.com/en/futures-activity/leaderboard?type=myProfile&tradeType=PERPETUAL&encryptedUid=8D27A8FA0C0A726CF01A7D11E0095577)
+	- Store the table with time interval and ROI, both in % and USD
+	- Store position informations (both for USDM and COINM)
+This has to be done with the all_endpoints.chls endpoints. NO SCRAPING.
+
+Would be great to have the same steps repeated each 60 minutes
+Separate table (from position) has to be created.
+
+WE DO NOT HAVE: list of traders, table for data
 
 2) Having a application able to be runned in several instances that sends telegram messages to specific groups. Each instance manages one group. The group info are sent in the configuration of the instance.
 Parameters: group_id, traders_to_copy
