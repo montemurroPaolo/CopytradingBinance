@@ -18,6 +18,8 @@ Let's sketch some points that the app must/mustn't have:
 - Databases must be clean. No entries with no-sense, like non-existent positions, NA or 0. Properly handle exceptions
 - All the trading functions must be created. Will use Huobi APIs for simplicity. Market orders are fine.
 
+First develop everything without trading, but with the messaging system. Add trading only when everything works smoothly.
+
 Good naming and comments. What the fuck is a1 a2 a3?
 
 How to run the app from the server. Improve this as well...
